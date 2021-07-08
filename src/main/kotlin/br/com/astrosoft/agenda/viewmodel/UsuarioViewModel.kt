@@ -1,7 +1,7 @@
-package br.com.astrosoft.devolucao.viewmodel
+package br.com.astrosoft.agenda.viewmodel
 
-import br.com.astrosoft.devolucao.model.beans.Loja
-import br.com.astrosoft.devolucao.model.beans.UserSaci
+import br.com.astrosoft.agenda.model.beans.Loja
+import br.com.astrosoft.agenda.model.beans.UserSaci
 import br.com.astrosoft.framework.viewmodel.ITabView
 import br.com.astrosoft.framework.viewmodel.IUsuarioView
 import br.com.astrosoft.framework.viewmodel.UserViewModel
