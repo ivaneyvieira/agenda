@@ -1,0 +1,6 @@
+profile-location: true
+entity-packages: br.com.astrosoft.agenda.model.ebean
+transactional-packages: br.com.astrosoft
+querybean-packages: br.com.astrosoft
+
+

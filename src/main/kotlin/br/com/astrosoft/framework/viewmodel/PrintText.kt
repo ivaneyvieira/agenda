@@ -1,6 +1,6 @@
 package br.com.astrosoft.framework.viewmodel
 
-import br.com.astrosoft.framework.model.DB
+import br.com.astrosoft.framework.model.DBConfig
 import br.com.astrosoft.framework.util.CupsUtils
 import br.com.astrosoft.framework.util.lpad
 import br.com.astrosoft.framework.util.rpad
@@ -55,7 +55,7 @@ abstract class PrintText<T> {
       }
       sumary(text)
       finalize(text)
-      if (!DB.test) CupsUtils.printCups(impressora, text.toString())
+      if (!DBConfig.test) CupsUtils.printCups(impressora, text.toString())
       else {
         println(text.toString())
         File("/tmp/relatorio.txt").writeText(text.toString())

@@ -5,7 +5,7 @@ import java.io.FileNotFoundException
 import java.io.FileReader
 import java.util.*
 
-class DB(banco: String) {
+class DBConfig(banco: String) {
   val driver = prop.getProperty("datasource.$banco.databaseDriver") ?: ""
   val url = prop.getProperty("datasource.$banco.databaseUrl") ?: ""
   val username = prop.getProperty("datasource.$banco.username") ?: ""

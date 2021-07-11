@@ -3,7 +3,7 @@ package br.com.astrosoft.agenda.model
 import br.com.astrosoft.agenda.model.beans.Loja
 import br.com.astrosoft.agenda.model.beans.UserSaci
 import br.com.astrosoft.framework.model.Config.appName
-import br.com.astrosoft.framework.model.DB
+import br.com.astrosoft.framework.model.DBConfig
 import br.com.astrosoft.framework.model.QueryDB
 
 class QuerySaci : QueryDB(driver, url, username, password) {
@@ -47,7 +47,7 @@ class QuerySaci : QueryDB(driver, url, username, password) {
   }
 
   companion object {
-    private val db = DB("saci")
+    private val db = DBConfig("saci")
     internal val driver = db.driver
     internal val url = db.url
     internal val username = db.username
