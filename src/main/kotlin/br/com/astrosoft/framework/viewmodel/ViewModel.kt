@@ -18,6 +18,7 @@ abstract class ViewModel<V : IView>(val view: V) {
   fun showReport(chave: String, report: ByteArray) = view.showReport(chave, report)
 }
 
+
 fun exec(view: IView, block: () -> Unit) {
   try {
     block()
